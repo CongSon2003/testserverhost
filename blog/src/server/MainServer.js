@@ -9,12 +9,12 @@ app.use(bodyParser.json());
 app.use('/public',express.static(path.join(__dirname,'./public')));
 
 app.get('/Home',(req,res,next)=>{
-    let pathFile = path.join(__dirname,'./public/home.html');
+    let pathFile = path.join(__dirname,'/public');
     res.sendFile(pathFile);
 })
 
 app.get('/',(req,res,next)=>{
-    let pathFile = path.join(__dirname,'./home.html');
+    let pathFile = path.join(__dirname,'home.html');
     res.sendFile(pathFile);
 })
 
