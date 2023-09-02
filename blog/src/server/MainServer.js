@@ -18,5 +18,5 @@ app.get('/',(req,res,next)=>{
     res.sendFile(pathFile);
 })
 
-app.listen(3000,()=>{
+app.listen(process.env.PORT,()=>{
 })
