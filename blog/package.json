@@ -4,7 +4,7 @@
   "description": "",
   "main": "MainServer.js",
   "scripts": {
-    "start": "nodemon src/server/MainServer.js",
+    "start": "nodemon blog/src/server/MainServer.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "CongSon",

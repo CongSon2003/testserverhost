@@ -6,7 +6,7 @@ const path = require('path');
 app.use(bodyParser.urlencoded({extended : false}));
 app.use(bodyParser.json());
 
-app.use('/public',express.static(path.join(__dirname,'/blog/src/server/public')));
+app.use('/public',express.static(path.join(__dirname,'/public')));
 
 app.get('/Home',(req,res,next)=>{
     let pathFile = path.join(__dirname,'/public');
@@ -14,9 +14,9 @@ app.get('/Home',(req,res,next)=>{
 })
 
 app.get('/',(req,res,next)=>{
-    let pathFile = path.join(__dirname,'/blog/src/server/home.html');
+    let pathFile = path.join(__dirname,'home.html');
     res.sendFile(pathFile);
 })
 
-app.listen(process.env.PORT,()=>{
+app.listen(3000,()=>{
 })
