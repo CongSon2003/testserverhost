@@ -6,7 +6,7 @@ const path = require('path');
 app.use(bodyParser.urlencoded({extended : false}));
 app.use(bodyParser.json());
 
-app.use('/public',express.static(path.join(__dirname,'./public')));
+app.use('/public',express.static(path.join(__dirname,'/public')));
 
 app.get('/Home',(req,res,next)=>{
     let pathFile = path.join(__dirname,'/public');
